@@ -14,12 +14,13 @@ body {
 
 #container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
 .card-1 {
-  border: solid 1px red;
+  border: solid 1px black;
   border-radius: 4px;
   width: 30.5rem;
   height: 15rem;
@@ -48,15 +49,22 @@ body {
 }
 
 .card-2 {
-  border: solid 1px orange;
-  width: auto;
   background-color: #efd3d7;
   border-radius: 4px;
   display: grid;
+  max-width: 800px;
+  margin: 1.25rem auto;
+  min-height: 200px;
+  overflow-wrap: break-word;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 .border-top-2 {
-  width: 50rem;
+  width: 100%;
   height: 3rem;
   background-color: #cbc0d3;
 }
